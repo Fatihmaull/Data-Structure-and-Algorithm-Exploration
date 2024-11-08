@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int K = 1; 
+    while (K <= 10) {
+        cout << "HALO" << endl;
+        K++; 
+    }
+    return 0;
+}
