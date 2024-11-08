@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int bilangan, hasil_bagi, sisa_bagi;
+    cout << "Masukkan bilangan: ";
+    cin >> bilangan;
+
+    hasil_bagi = bilangan / 2;
+    sisa_bagi = bilangan - (hasil_bagi * 2); 
+
+    if (sisa_bagi == 0) {
+        cout << "Bilangan Genap" << endl;
+    } else {
+        cout << "Bilangan Ganjil" << endl;
+    }
+    return 0;
+}
