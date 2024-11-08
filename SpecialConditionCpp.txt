@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int X, Y, P;
+    float Q;
+    cout << "Masukkan nilai X: ";
+    cin >> X;
+    cout << "Masukkan nilai Y: ";
+    cin >> Y;
+    P = X + Y;
+    if (P >= 0) {
+        // Q = X * Y
+        Q = X * Y;
+    } else {
+        // Q = X / Y
+        if (Y != 0) { 
+            Q = (float)X / Y;
+        } else {
+            cout << "Error: Pembagian dengan nol tidak diizinkan." << endl;
+            return 1; 
+        }
+    }
+    cout << "Hasil Q: " << Q << endl;
+    return 0;
+}
